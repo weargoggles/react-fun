@@ -1,0 +1,24 @@
+{
+  "name": "react-fun",
+  "version": "1.0.0",
+  "description": "fun times",
+  "main": "main.js",
+  "scripts": {
+    "test": "jest",
+    "start": "beefy . -- -t reactify"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "flux": "^2.0.1",
+    "react": "^0.12.2"
+  },
+  "devDependencies": {
+    "beefy": "^2.1.3",
+    "browserify": "^8.1.3",
+    "envify": "^3.2.0",
+    "jest-cli": "~0.1.17",
+    "reactify": "^1.0.0",
+    "watchify": "^2.3.0"
+  }
+}
