@@ -56,6 +56,8 @@ var Asteroid = React.createClass({
     }
 });
 
+var cameraPosition = new Three.Vector3(0, 0, 600);
+
 var ExampleScene = React.createClass({
   displayName: 'ExampleScene',
   render: function() {
@@ -67,7 +69,7 @@ var ExampleScene = React.createClass({
         aspect: this.props.width / this.props.height,
         near: 1,
         far:5000,
-        position: new THREE.Vector3(0,0,600),
+        position: cameraPosition,
         lookat: new THREE.Vector3(0,0,0)
       }
     );
@@ -82,12 +84,12 @@ var ExampleScene = React.createClass({
 });
 
 var sceneProps = {
-    width: window.innerWidth - 6,
-    height: window.innerHeight - 6,
+    width: window.innerWidth - 32,
+    height: window.innerHeight - 32,
     asteroidData: {
         position: new THREE.Vector3(0, 0, 0),
         quaternion: new THREE.Quaternion(),
-        albedo: 1.0
+        albedo: 0.3
     }
 };
 
