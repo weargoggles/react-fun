@@ -1,4 +1,7 @@
+uniform vec3 light;
+
 varying vec3 vNormal;
+varying vec3 vNewNormal;
 
 void main() {
 
@@ -6,6 +9,8 @@ void main() {
   // the attribute value passed
   // in by Three.js
   vNormal = normal;
+
+  vNewNormal = normalMatrix * normal;
 
   gl_Position = projectionMatrix *
                 modelViewMatrix *
